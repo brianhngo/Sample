@@ -1,47 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # BENG123 Final Project: Construction Template
-# ## Module Rubric  (20 total points)
-# <font color='red'>**IMPORTANT NOTES:**</font>  
-# * **The IPYNB files must run from top to bottom without errors. We will run your notebook using the following steps: $$\text{"Kernel}\ \rightarrow\ \text{Restart and Run all"}$$**
-# * **Make sure you are using the correct (most recent) version of masspy
-# <font color='red'>(version>=0.1.0a31)</font>**
-# * **Do not leave unneccessary code/comments in the final notebook submission.**
-# * **Use options** ``{"method": "LSODA", "atol": 1e-15}`` **when simulating a model with enzyme modules.**
-# 
-# #### Part 1: Formation of RBC Model (4 points)
-# 1. Form the RBC network correctly by integrating the glycolysis, pentose phosphate pathway, AMP metabolism, and hemoglobin modules. Display the correct model overview.
-# 2. Define the steady state. Display the correct steady state flux map, PERCs values, and the equilibrium constants in an organized DataFrame.
-# 3. Graphically verify that the model is in steady state.
-# 4. Add at least one pre-built enzyme module to the model and graphically verify that the model is in steady state.
-# 
-# #### Part 2: Enzyme Module Construction (10  points)
-# 5. Metabolites and reactions defined such that the module mechanism is correctly reconstructed.
-# 6. Enzymatic reaction rate is defined correctly \\((v_{\mathrm{G6PDH2r}})\\).
-# 7. Steady state enzyme concentrations symbolically determined correctly.
-# 8. Numerical values (including equilibrium constants) correctly defined, displayed, and substituted into equations.
-# 9. Extract and display ${G6PDH2r}_{tot}$ symbollically in terms of enzyme species and in terms of the rate constants.
-# 10. Determine rate constants correctly with an optimization Error less than 1e-6. Numerical values of the rate constants are diplayed. 
-# 11. The optimization error, and \\(r_{T}\\) are displayed. 
-# 12. Module initial conditions correctly set and are displayed. 
-# 13. Reconstructed enzyme module passes a quality control and assurance check.
-# 14. Module is added to the RBC to form the base model and steady state can be reached.
-# 
-# #### Part 3: Enzyme Module Modification (4  points)
-# 15. Modification is correctly introduced. 
-# 16. Modified model is correctly set up. 
-# 17. Graphical verification that the modified model can reach a steady state.
-# 18. Models can be exported/imported without issue.
-# 
-# #### Organization (2 points)
-# 19. iPython notebook runs without any TA assistance
-# 20. iPython notebook is well organized and clear to follow.
-# 
-# Be sure to include print and sym.pprint statements where necessary to display steps that match up to this rubric, (e.g. print $(v_{\mathrm{G6PDH2r}})$)
-
-# ## Module Mechanism and Numerical Values:
-# We will treat G6PDH2r as a monomer. Define al the reactions and metabolites listed below. The following are steps converting substrates to products, and competitive inhibition of the enzyme. 
+## This is a sample code from one of my school projects. Here the ultimate goal was to map all the cellular pathways that the body's cells goes through.
+## By creating this pathway, we were able to replicate a healthy Red blood cell as our control, then insert a disease model Red blood cells.
+# Based upon the graphs and stuff, it will help us suggest possible future treatments for physicians to suggest.
 # 
 # **Reactions:**
 # 
